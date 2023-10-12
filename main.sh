@@ -5,3 +5,6 @@
 /bin/zsh ./install-asdf.sh
 /bin/zsh ./install-miniconda.sh
 /bin/zsh ./install-cloud-sdk.sh
+/bin/zsh ./install-alias.sh
+
+source ${ZDOTDIR:-~}/.zshrc

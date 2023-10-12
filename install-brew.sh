@@ -2,7 +2,8 @@
 
 brew install \
 wget \
-htop
+htop \
+stats
 echo "[Done] installed packages"
 
 brew install --cask iterm2 

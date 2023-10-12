@@ -27,4 +27,5 @@ brew install --cask openinterminal
 brew install --cask obsidian
 brew install --cask vivaldi
 brew install --cask alfred
+brew install --cask chromium
 echo "[Done] installed applications"

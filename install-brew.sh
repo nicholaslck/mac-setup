@@ -22,6 +22,7 @@ brew install --cask slack
 brew install --cask docker 
 brew install --cask visual-studio-code 
 brew install --cask android-studio 
+brew install --cask fork
 brew install --cask openinterminal
 brew install --cask obsidian
 brew install --cask vivaldi

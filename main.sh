@@ -7,4 +7,5 @@
 /bin/zsh ./install-cloud-sdk.sh
 /bin/zsh ./install-alias.sh
 
-source ${ZDOTDIR:-~}/.zshrc
+echo "You mac has been configured!"
+echo "Please restart your terminal to see the changes"

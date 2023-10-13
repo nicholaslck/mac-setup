@@ -28,4 +28,5 @@ brew install --cask obsidian
 brew install --cask vivaldi
 brew install --cask alfred
 brew install --cask chromium
+brew install --cask poe
 echo "[Done] installed applications"

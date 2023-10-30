@@ -30,5 +30,5 @@ brew install --cask alfred
 brew install --cask chromium
 brew install --cask poe
 brew install --cask anydesk
-brew install --cask alt-tab
+# brew install --cask alt-tab
 echo "[Done] installed applications"

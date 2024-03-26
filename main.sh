@@ -9,12 +9,21 @@ brew link zsh
 chsh -s $(which zsh)
 echo "[Done] installed zsh"
 
-$(which zsh) <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1
+zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1
 echo "[Done] installed zsh-zap"
 
-############# Run scripts in Zsh #############
-zsh ./run-in-zsh.sh
+############# Replace my default-zshrc file #############
+cp ./templates/default-zshrc ~/.zshrc
+source ~/.zshrc
+
+############# Brew install #############
+brew bundle --file=./Brewfile
+
+############# Run post-install scripts in Zsh #############
+zsh ./zsh-scripts/post-install-google-cloud-sdk.sh
+zsh ./zsh-scripts/post-install-asdf.sh
+zsh ./zsh-scripts/post-install-miniconda.sh
 
 ############# Complete #############
-echo "You mac has been configured!"
+echo "Your Mac has been configured!"
 echo "Please restart your terminal to see the changes"

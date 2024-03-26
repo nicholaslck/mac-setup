@@ -1,8 +1,6 @@
 #!/bin/zsh
 
-brew install awscli
-brew install --cask google-cloud-sdk
-
+# Init google-cloud-sdk before completion plugins
 sed -i '' '/# Load and initialise completion system/i\
 # Init google-cloud-sdk\
 source "\$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"\
@@ -10,4 +8,5 @@ source "\$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/comp
 
 ' ${ZDOTDIR:-~}/.zshrc
 
-echo "[Done] installed cloud sdk"
+source ${ZDOTDIR:-~}/.zshrc
+echo "[Done] post-install google-cloud-sdk"

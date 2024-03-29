@@ -1,7 +1,6 @@
 brew "zsh"
 brew "wget"
 brew "htop"
-brew "stats"
 brew "gpg" 
 brew "gawk"
 

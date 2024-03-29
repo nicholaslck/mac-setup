@@ -1,7 +1,9 @@
 #!/bin/bash
 
 ############# Install brew and zsh #############
-bash -c "NONINTERACTIVE=1 $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+cp ./templates/default-zprofile ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 echo "[Done] installed brew"
 
 brew install zsh
@@ -15,6 +17,7 @@ echo "[Done] installed zsh-zap"
 ############# Replace my default-zshrc file #############
 cp ./templates/default-zshrc ~/.zshrc
 source ~/.zshrc
+echo "Replaced templated ~/.zshrc"
 
 ############# Brew install #############
 brew bundle --file=./Brewfile

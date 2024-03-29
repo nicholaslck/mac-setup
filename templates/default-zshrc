@@ -22,10 +22,10 @@ compinit
 # <<< post-install asdf <<<
 
 # Added path suggested by brew
-export PATH="/usr/local/sbin:$PATH"
+# export PATH="/usr/local/sbin:$PATH"
 
 # Added X11 display
-export DISPLAY=:0
+# export DISPLAY=:0
 
 # Custom aliases
 alias l="ls -lah"

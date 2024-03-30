@@ -27,6 +27,10 @@ zsh ./zsh-scripts/post-install-google-cloud-sdk.sh
 zsh ./zsh-scripts/post-install-asdf.sh
 zsh ./zsh-scripts/post-install-miniconda.sh
 
+############# Config vimrc #############
+cp ./templates/default-vimrc ~/.vimrc
+echo "Replaced templated ~/.vimrc"
+
 ############# Complete #############
 echo "Your Mac has been configured!"
 echo "Please restart your terminal to see the changes"

@@ -27,9 +27,13 @@ cask "chromium"
 cask "arc"
 cask "poe"
 cask "anydesk"
+cask "stats"
 
 brew "awscli"
 
 cask "google-cloud-sdk" # need to run post-install-google-cloud-sdk.sh
 brew "asdf" # need to run post-install-asdf.sh
 cask "miniconda" # need to run post-install-miniconda.sh
+
+tap "homebrew/cask-fonts"
+brew "font-hack-nerd-font"

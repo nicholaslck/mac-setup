@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-sed -i '' 's/{{{ asdf }}}/. $(brew --prefix asdf)\/libexec\/asdf.sh/' ~/.zshrc
+sed -i '' 's/# {{{ asdf }}}/. $(brew --prefix asdf)\/libexec\/asdf.sh/' ~/.zshrc
 source ~/.zshrc
 echo "[Done] post-install asdf"
 

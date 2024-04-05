@@ -23,9 +23,9 @@ echo "Replaced templated ~/.zshrc"
 brew bundle --file=./Brewfile
 
 ############# Run post-install scripts in Zsh #############
-zsh ./zsh-scripts/post-install-google-cloud-sdk.sh
-zsh ./zsh-scripts/post-install-asdf.sh
-zsh ./zsh-scripts/post-install-miniconda.sh
+zsh ./post-install/post-install-google-cloud-sdk.sh
+zsh ./post-install/post-install-asdf.sh
+zsh ./post-install/post-install-miniconda.sh
 
 ############# Config vimrc #############
 cp ./templates/default-vimrc ~/.vimrc

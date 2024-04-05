@@ -3,6 +3,10 @@ brew "wget"
 brew "htop"
 brew "gpg" 
 brew "gawk"
+brew "tree"
+
+tap "homebrew/cask-fonts"
+brew "font-hack-nerd-font"
 
 cask "iterm2" 
 cask "flycut" 
@@ -28,12 +32,13 @@ cask "arc"
 cask "poe"
 cask "anydesk"
 cask "stats"
+cask "protonvpn"
+cask "postman"
 
 brew "awscli"
-
 cask "google-cloud-sdk" # need to run post-install-google-cloud-sdk.sh
 brew "asdf" # need to run post-install-asdf.sh
 cask "miniconda" # need to run post-install-miniconda.sh
 
-tap "homebrew/cask-fonts"
-brew "font-hack-nerd-font"
+brew "ollama"
+cask "logi-options-plus"

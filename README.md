@@ -1,10 +1,11 @@
 # Getting Started
 
-> [!NOTE] 
-> Support Apple Silicon only.
+> [!NOTE]
+> Support both Apple Silicon and Intel Architecture only.
 
 ```bash
 git clone https://github.com/nicholaslck/mac-setup.git
+
 cd mac-setup
-bash main.sh
+bash main.sh # password required in later stage
 ```

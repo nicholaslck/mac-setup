@@ -1,1 +1,22 @@
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# >>> Homebrew environment >>>
+UNAME_MACHINE="$(/usr/bin/uname -m)"
+if [[ "${UNAME_MACHINE}" == "arm64" ]]; then
+    # On ARM macOS
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+else
+    # On Intel macOS
+    eval "$(/usr/local/bin/brew shellenv)"
+fi
+# <<< Homebrew environment <<<
+
+# >>> Ruby Gems (mostly for Cocoapods) >>>
+export PATH=$HOME/.gem/bin:$PATH
+# <<< Ruby Gems (mostly for Cocoapods) <<<
+
+# >>> CHROME_EXECUTABLE for flutter >>>
+export CHROME_EXECUTABLE=/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
+# <<< CHROME_EXECUTABLE for flutter <<<
+
+# >>> Android SDK >>>
+export ANDROID_HOME=$HOME/Library/Android/sdk
+# <<< Android SDK <<<

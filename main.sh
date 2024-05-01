@@ -1,11 +1,12 @@
 #!/bin/bash
 
-############# Install brew and zsh #############
+############# Install brew #############
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-cp ./templates/default-zprofile ~/.zprofile
+cp ./templates/default-zprofile $HOME/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 echo "[Done] installed brew"
 
+############# Install zsh #############
 brew install zsh
 brew link zsh
 chsh -s $(which zsh)
@@ -14,22 +15,21 @@ echo "[Done] installed zsh"
 zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1
 echo "[Done] installed zsh-zap"
 
-############# Replace my default-zshrc file #############
-cp ./templates/default-zshrc ~/.zshrc
-source ~/.zshrc
-echo "Replaced templated ~/.zshrc"
-
 ############# Brew install #############
 brew bundle --file=./Brewfile
 
+############# Replace my default-zshrc file #############
+cp ./templates/default-zshrc $HOME/.zshrc
+source $HOME/.zshrc
+echo "Replaced templated $HOME/.zshrc"
+
 ############# Run post-install scripts in Zsh #############
-zsh ./post-install/post-install-google-cloud-sdk.sh
 zsh ./post-install/post-install-asdf.sh
 zsh ./post-install/post-install-miniconda.sh
 
 ############# Config vimrc #############
-cp ./templates/default-vimrc ~/.vimrc
-echo "Replaced templated ~/.vimrc"
+cp ./templates/default-vimrc $HOME/.vimrc
+echo "Replaced templated $HOME/.vimrc"
 
 ############# Complete #############
 echo "Your Mac has been configured!"

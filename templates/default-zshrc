@@ -32,7 +32,8 @@ compinit
 # export DISPLAY=:0
 
 # Custom aliases
-alias l="ls -lah"
+alias la="ls -a"
+alias ll="ls -lah"
 alias c="clear"
 alias reboot="sudo /sbin/reboot"
 alias shutdown="sudo /sbin/shutdown -h now"

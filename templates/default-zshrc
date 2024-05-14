@@ -25,9 +25,6 @@ compinit
 . $(brew --prefix asdf)/libexec/asdf.sh
 # <<< asdf <<<
 
-# Added path suggested by brew
-# export PATH="/usr/local/sbin:$PATH"
-
 # Added X11 display
 # export DISPLAY=:0
 
@@ -38,3 +35,10 @@ alias c="clear"
 alias reboot="sudo /sbin/reboot"
 alias shutdown="sudo /sbin/shutdown -h now"
 alias reload="source $HOME/.zshrc"
+
+# Flutter SDK via asdf
+export FLUTTER_ROOT="$(asdf where flutter)"
+
+# Ollama origins for Obsidian Copilot
+export OLLAMA_ORIGINS=app://obsidian.md*
+launchctl setenv OLLAMA_ORIGINS $OLLAMA_ORIGINS

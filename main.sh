@@ -24,8 +24,8 @@ source $HOME/.zshrc
 echo "Replaced templated $HOME/.zshrc"
 
 ############# Run post-install scripts in Zsh #############
-zsh ./post-install/post-install-asdf.sh
-zsh ./post-install/post-install-miniconda.sh
+zsh ./post-install/asdf.sh
+zsh ./post-install/miniconda.sh
 
 ############# Config vimrc #############
 cp ./templates/default-vimrc $HOME/.vimrc

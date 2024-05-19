@@ -1,13 +1,12 @@
-brew "zsh"
-brew "wget"
-brew "htop"
-brew "gpg" 
+# System dependencies
 brew "gawk"
-brew "tree"
+brew "gpg"
+brew "htop"
 brew "jq"
-
-tap "homebrew/cask-fonts"
-brew "font-hack-nerd-font"
+brew "tree"
+brew "wget"
+brew "zsh"
+cask "font-hack-nerd-font"
 
 # Basic
 cask "1password"
@@ -22,8 +21,8 @@ cask "fork"
 cask "postman"
 brew "awscli"
 cask "google-cloud-sdk"
-brew "asdf" # need to run post-install-asdf.sh
-cask "miniconda" # need to run post-install-miniconda.sh
+brew "asdf" # need to run post-install/asdf.sh
+cask "miniconda" # need to run post-install/miniconda.sh
 brew "ollama"
 
 # Productivity improvements
@@ -37,6 +36,7 @@ cask "poe"
 cask "anydesk"
 cask "protonvpn"
 cask "logi-options-plus"
+cask "openinterminal"
 
 # Multimedia
 cask "vlc"
@@ -46,6 +46,7 @@ cask "spotify"
 cask "signal"
 cask "telegram"
 cask "whatsapp"
+cask "discord"
 
 # Browsers
 cask "arc"

@@ -25,20 +25,24 @@ compinit
 . $(brew --prefix asdf)/libexec/asdf.sh
 # <<< asdf <<<
 
-# Added X11 display
-# export DISPLAY=:0
+# >>> Flutter SDK via asdf >>>
+export FLUTTER_ROOT="$(asdf where flutter)"
+# <<< Flutter SDK via asdf <<<
 
-# Custom aliases
+# >>> Ollama origins for Obsidian Copilot >>>
+export OLLAMA_ORIGINS=app://obsidian.md*
+launchctl setenv OLLAMA_ORIGINS $OLLAMA_ORIGINS
+# <<< Ollama origins for Obsidian Copilot <<<
+
+# >>> Custom aliases >>>
 alias la="ls -a"
 alias ll="ls -lah"
 alias c="clear"
 alias reboot="sudo /sbin/reboot"
 alias shutdown="sudo /sbin/shutdown -h now"
 alias reload="source $HOME/.zshrc"
+# <<< Custom aliases <<<
 
-# Flutter SDK via asdf
-export FLUTTER_ROOT="$(asdf where flutter)"
-
-# Ollama origins for Obsidian Copilot
-export OLLAMA_ORIGINS=app://obsidian.md*
-launchctl setenv OLLAMA_ORIGINS $OLLAMA_ORIGINS
+# >>> Added X11 display >>>
+# export DISPLAY=:0
+# <<< Added X11 display <<<

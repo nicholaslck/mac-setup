@@ -37,7 +37,6 @@ cask "raycast"
 cask "poe"
 cask "anydesk"
 cask "protonvpn"
-cask "logi-options-plus"
 cask "openinterminal"
 brew "mac-mouse-fix"
 

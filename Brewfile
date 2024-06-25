@@ -14,7 +14,7 @@ cask "stats"
 
 #### Dev tools
 cask "iterm2" 
-cask "docker"
+brew "orbstack"
 cask "visual-studio-code"
 cask "android-studio"
 cask "fork"

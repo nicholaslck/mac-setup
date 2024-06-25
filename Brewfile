@@ -1,4 +1,4 @@
-# System dependencies
+#### System dependencies
 brew "gawk"
 brew "gpg"
 brew "htop"
@@ -8,11 +8,11 @@ brew "wget"
 brew "zsh"
 cask "font-hack-nerd-font"
 
-# Basic
+#### Basic
 cask "1password"
 cask "stats"
 
-# Dev tools
+#### Dev tools
 cask "iterm2" 
 cask "docker"
 cask "visual-studio-code"
@@ -25,32 +25,33 @@ brew "asdf" # need to run post-install/asdf.sh
 cask "miniconda" # need to run post-install/miniconda.sh
 brew "ollama"
 
-# Productivity improvements
+#### Productivity improvements
 cask "flycut" 
 cask "rectangle"
 cask "lunar"
-cask "onedrive"
+# cask "onedrive"
 cask "obsidian"
-cask "anytype"
+# cask "anytype"
 # cask "alfred"
 cask "raycast"
-cask "poe"
+# cask "poe"
 cask "anydesk"
 cask "protonvpn"
 cask "openinterminal"
-brew "mac-mouse-fix"
+# brew "mac-mouse-fix"
+cask "logi-options-plus"
 
-# Multimedia
+#### Multimedia
 brew "ffmpeg"
 cask "vlc"
 cask "spotify"
 
-# Social apps
+#### Social apps
 cask "signal"
 cask "telegram"
 cask "whatsapp"
 cask "discord"
 
-# Browsers
+#### Browsers
 cask "arc"
 cask "google-chrome"

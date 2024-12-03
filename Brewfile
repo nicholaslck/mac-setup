@@ -24,16 +24,18 @@ cask "google-cloud-sdk"
 brew "asdf" # need to run post-install/asdf.sh
 cask "miniconda" # need to run post-install/miniconda.sh
 brew "ollama"
+cask "windsurf"
 
 #### Productivity improvements
 cask "flycut" 
-cask "rectangle"
+# cask "rectangle"
 cask "lunar"
 cask "obsidian"
 cask "raycast"
 cask "anydesk"
 cask "protonvpn"
-cask "openinterminal"
+# cask "openinterminal"
+# brew "mac-mouse-fix"
 cask "logi-options-plus"
 # cask "anytype"
 # cask "alfred"
